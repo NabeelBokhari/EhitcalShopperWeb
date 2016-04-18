@@ -42,7 +42,7 @@ body {
 #topmenu {
 	display:block;
 	list-style:none;
-	padding:0 0px 0px 278px;
+	padding:0 100px 100px 278px;
 	float: right;
 	width: 415px;
 }
@@ -55,8 +55,8 @@ body {
 	height:28px;
 	margin:0px 0px 0px0px;
 	text-decoration:none;
-	padding:9px 15px 0px 15px;
-	text-align:center;
+	padding:9px 15px 0px 0px;
+	text-align:right;
 }
 #topmenu a, #topmenu a:visited, #topmenu a:active {
 	color:#FFFFFF;
