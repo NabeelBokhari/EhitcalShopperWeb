@@ -50,7 +50,8 @@
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	min-width: 10em;
+	min-width: 6em;
+    min-height: 24em;
 	margin: 0 1em 2.5em;
 	padding: 1.5em 1.5em 2em;
 	background: #24252A;
