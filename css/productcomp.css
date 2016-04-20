@@ -283,11 +283,11 @@
 }
 
 .action--compare-add .fa-check,
-.action--compare-add input[type=checkbox]:checked ~ .fa-plus {
+.action--compare-add input[ type=checkbox ]:checked ~ .fa-plus {
 	display: none;
 }
 
-.action--compare-add input[type=checkbox]:checked ~ .fa-check {
+.action--compare-add input[ type=checkbox ]:checked ~ .fa-check {
 	display: block;
 	color: #83EE7A;
 }
@@ -527,7 +527,7 @@
 	}
 }
 
-@media screen and (max-width: 59.688em) {
+@media screen and ( max-width: 59.688em ) {
 	.grid {
 		padding: 2em 0.5em;
 		font-size: 65%;
@@ -586,7 +586,7 @@
 		padding: 0.5em 0.75em;
 	}
 
-	.compare__item span[class^="product__"] {
+	.compare__item span[ class^="product__" ] {
 		display: inline-block;
 		padding: 0.25em;
 		margin: 0 0 0.5em 0;
