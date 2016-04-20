@@ -1,4 +1,5 @@
-/* General Style, made with http://icomoon.io */
+/* General Style
+/* Source:  http://icomoon.io */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 @font-face {
 	font-family: 'icons';
@@ -25,7 +26,7 @@ html {
 	padding: 0;
 }
 
-/* ClearFix and Helper classes */
+/* ClearFix and Helper Classes */
 .cf:before,
 .cf:after {
 	content: ' ';
@@ -42,7 +43,7 @@ html {
 	pointer-events: none;
 }
 
-/* Main style */
+/* Main Style */
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #262626;
@@ -71,21 +72,21 @@ a:hover {
 }
 
 .eth-header h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: 400;
 	line-height: 1.5;
 	margin: 0 0 .6em 0;
 }
 
 .eth-header > span {
-	font-weight: 700;
-	font-size: 1.0em;
+	font-weight: 400;
+	font-size: 3.0em;
 	color: #4C6F40;
 	position: relative;
 	z-index: 100;
 	display: block;
-	padding: 0 0 .6em .1em;
-	letter-spacing: .5em;
+	padding: 0 0 .5em .1em;
+	letter-spacing: .2em;
 	text-transform: uppercase;
 	text-indent: 30px;
 }
@@ -101,9 +102,9 @@ a:hover {
 }
 
 .eth-header > span span:hover:before {
-	content: attr(data-content);
-	font-size: 110%;
-	font-weight: 700;
+	content: attr( data-content );
+	font-size: 40%;
+	font-weight: 400;
 	line-height: 1.2;
 	position: absolute;
 	left: auto;
@@ -137,7 +138,7 @@ a:hover {
 }
 
 .eth-header nav a:hover:before {
-	content: attr(data-info);
+	content: attr( data-info );
 	color: #595A5F;
 	font-weight: bold;
 	font-size: 0.85em;
