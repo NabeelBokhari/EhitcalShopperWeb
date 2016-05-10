@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Ethical Shopper: Product/Brand Overview</title>
+		<meta name="description" content="An app that helps you shop ethically." />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/productover.css" />
+		<!-- Modernizr is used in case of flexbox failure, for older browsers -->
+		<script src="../js/modernizr.custom.js"></script>
+	</head>
+	<body>
+        <header class="eth-header clearfix">
+            <span>Ethical Shopper   <span class="eth-icon eth-icon-about" data-content="An app that provides an innovative approach to your decision making based on your ethical/political stances when buying a product."></span></span>
+            <h1>Product/Brand Overview</h1>
+        </header>
+        <div class="main">
+            <ul id="eth-accordion" class="eth-accordion">
+                <li>
+                    <h2>Product 001:  Demo</h2>
+                    <div>
+                        <p>Here is the product description, and the ethical categories in accordian form below.</p>
+                        <h3>Ratings</h3>
+                        <ul class="eth-subaccordion">
+                            <li>
+                                <h4 class="eth-trigger">Environmental Impact:</h4>
+                                <div class="eth-content">
+                                    <p>Description, and a link.</p>
+                                    <ul class="eth-subaccordion">
+                                        <li>
+                                            <h5 class="eth-trigger">Add Source:</h5>
+                                            <div class="eth-content">
+                                                <p>Oh no!  There's nothing here.</p>
+                                            </div>
+                                        </li>
+<!--
+                                        <li>
+                                            <h5 class="eth-trigger">Placeholder 02</h5>
+                                            <div class="eth-content">
+                                                <p>Description, and a link.</p>
+                                            </div>
+                                        </li>
+-->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="eth-trigger">Human Rights:</h4>
+                                <div class="eth-content">
+                                    <p>Description, and a link.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4 class="eth-trigger">Animal Welfare:</h4>
+                                <div class="eth-content">
+                                    <p>Description, and a link.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../js/mainov.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpNTAccordion( [options] );
+				- destroy:
+				$( selector ).cbpNTAccordion( 'destroy' );
+				*/
+
+				$( '#eth-accordion' ).ethAccordion();
+
+			} );
+		</script>
+	</body>
+</html>

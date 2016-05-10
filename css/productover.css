@@ -1,0 +1,162 @@
+/* General Style
+/* Source:  http://icomoon.io */
+@font-face {
+	font-family: 'icons';
+	font-weight: normal;
+	font-style: normal;
+
+	src: url('../fonts/icons/icons.eot');
+	src: url('../fonts/icons/icons.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/icons/icons.ttf') format('truetype'),
+         url('../fonts/icons/icons.svg#icons') format('svg');
+}
+
+@font-face {
+	font-family: 'icomoon';
+	font-weight: normal;
+	font-style: normal;
+    
+	src: url('../fonts/icons/icomoon.eot');
+	src: url('../fonts/icons/icomoon.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/icons/icomoon.ttf') format('truetype'),
+		 url('../fonts/icons/icomoon.svg#icomoon') format('svg');
+}
+
+@font-face {
+	font-family: 'fontawesome';
+    font-weight: normal;
+	font-style: normal;
+    
+	src: url('../fonts/fontawesome.eot');
+	src: url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontawesome.ttf') format('truetype'),
+		 url('../fonts/fontawesome.svg#fontawesome') format('svg');
+}
+
+
+/* Accordion */
+.eth-accordion {
+	list-style: none;
+    text-align: justify;
+	margin: 0;
+	padding: 0;
+}
+
+.eth-subaccordion {
+	list-style: none;
+}
+
+.eth-accordion .eth-trigger {
+	cursor: pointer;
+}
+
+.eth-accordion h2 {
+	margin: 0 0 0.3em;
+	padding: 1em 0 0.5em;
+	border-bottom: 2px solid #262626;
+	font-size: 3em;
+	font-weight: 300;
+}
+
+.eth-accordion h3 {
+	margin: 0 0 0.3em;
+	padding: 1em 0 0.5em;
+	border-bottom: 1px solid #262626;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.eth-accordion h4 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	padding: 0.5em 0 0.5em;
+	margin: 0 0 0.5em;
+}
+
+.eth-accordion h5 {
+	font-size: 1.2em;
+	color: #262626;
+	padding: 0.5em 0 0.5em;
+	margin: 0 0 0.5em;
+}
+
+.eth-accordion .eth-content p {
+	color: #262626;
+	font-size: 1.25em;
+	font-weight: 300;
+	line-height: 1.5;
+	padding: 0.2em 0 1.5em;
+	margin: 0;
+    margin-left: 1.9em;
+}
+
+/* Arrow icons */
+.eth-accordion > li > .eth-trigger:before,
+.eth-subaccordion > li > .eth-trigger:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: #262626;
+	margin-right: 0.5em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.eth-accordion > li > .eth-trigger:before {
+	font-size: 75%;
+}
+
+.eth-accordion > li > .eth-trigger:before {
+	content: "\36";
+}
+
+.eth-accordion > li > .eth-trigger:hover:before {
+	content: "\35";
+	color: inherit;
+}
+
+.eth-accordion > li.eth-open > .eth-trigger:before,
+.no-js .eth-accordion > li > .eth-trigger:before {
+	content: "\34";
+	color: inherit;
+}
+
+.eth-subaccordion > li > .eth-trigger:before {
+	content: "\32";
+}
+
+.eth-subaccordion > li > .eth-trigger:hover:before {
+	content: "\33";
+	color: inherit;
+}
+
+.eth-subaccordion > li.eth-open > .eth-trigger:before,
+.no-js .eth-subaccordion > li > .eth-trigger:before {
+	content: "\31";
+	color: inherit;
+}
+
+/* Initial height is zero. */
+.eth-accordion .eth-content {
+	height: 0;
+	overflow: hidden;
+}
+
+/* When open, set height to auto. */
+.eth-accordion .eth-open > .eth-content,
+.eth-subaccordion .eth-open > .eth-content,
+.no-js .eth-accordion .eth-content {
+	height: auto;
+}
+
+/* Media query */
+@media screen and ( max-width: 32em ) { 
+
+	.eth-accordion {
+		font-size: 70%;
+	}
+
+}

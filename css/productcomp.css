@@ -12,7 +12,7 @@
 .grid {
 	margin: 0 auto;
 	padding: 4em 1em;
-	max-width: 1700px;
+	max-width: 1600px;
 	text-align: center;
 	overflow: hidden;
 	-webkit-touch-callout: none;
@@ -96,13 +96,13 @@
 /* Source:  https://daneden.github.io/animate.css/ */
 @-webkit-keyframes swing {
 	25% {
-		-webkit-transform: rotate3d( 0, 0, 1, 4deg );
-		transform: rotate3d( 0, 0, 1, 6deg );
+		-webkit-transform: rotate3d( 0, 0, 1, 2deg );
+		transform: rotate3d( 0, 0, 1, 2deg );
 	}
 
 	50% {
-		-webkit-transform: rotate3d( 0, 0, 1, -4deg );
-		transform: rotate3d( 0, 0, 1, -4deg );
+		-webkit-transform: rotate3d( 0, 0, 1, -2deg );
+		transform: rotate3d( 0, 0, 1, -2deg );
 	}
 
 	75% {
@@ -118,13 +118,13 @@
 
 @keyframes swing {
     25% {
-		-webkit-transform: rotate3d( 0, 0, 1, 4deg );
-		transform: rotate3d( 0, 0, 1, 6deg );
+		-webkit-transform: rotate3d( 0, 0, 1, 2deg );
+		transform: rotate3d( 0, 0, 1, 2deg );
 	}
 
 	50% {
-		-webkit-transform: rotate3d( 0, 0, 1, -4deg );
-		transform: rotate3d( 0, 0, 1, -4deg );
+		-webkit-transform: rotate3d( 0, 0, 1, -2deg );
+		transform: rotate3d( 0, 0, 1, -2deg );
 	}
 
 	75% {
@@ -168,7 +168,7 @@
 
 .action--button {
 	background: #2C2D34;
-	color: #fff;
+	color: #FFFFFF;
 	border-radius: 2px;
 	-webkit-transition: background 0.2s;
 	transition: background 0.2s;
@@ -204,7 +204,7 @@
 	top: 0;
 	right: 0;
 	font-size: 2em;
-	color: #ddd;
+	color: #DDDDDD;
 	pointer-events: none;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, background 0.2s;
@@ -243,7 +243,7 @@
 .compare-bag--active .action--compare:nth-child( 5 ),
 .compare-bag--active .action--compare:nth-child( 6 ) {
 	background-color: #4C6F40;
-	color: #fff;
+	color: #FFFFFF;
 	pointer-events: auto;
 	cursor: pointer;
 }
@@ -251,7 +251,7 @@
 .action--remove {
 	position: absolute;
 	overflow: hidden;
-	color: #ddd;
+	color: #DDDDDD;
 	top: 0px;
 	right: 2px;
 	padding: 0;
@@ -259,7 +259,7 @@
 }
 
 .action--compare-add {
-	color: #ddd;
+	color: #DDDDDD;
 	position: absolute;
 	top: 10px;
 	right: 5px;
@@ -269,7 +269,7 @@
 	opacity: 1;
 	top: 35px;
 	right: 10px;
-	color: #ddd;
+	color: #DDDDDD;
 	font-size: 75%;
 	letter-spacing: 0;
 	background: #2F3035;
@@ -344,7 +344,7 @@
 	position: relative;
 }
 
-.product-icon::after {
+.product-icon:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -356,7 +356,7 @@
 	box-shadow: -56px 0 #2C2D34;
 }
 
-.compare-bag--full .product-icon::after {
+.compare-bag--full .product-icon:after {
 	display: none;
 }
 
@@ -391,7 +391,7 @@
 	transition: none;
 }
 
-.compare::before {
+.compare:before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -404,7 +404,7 @@
 	transition: opacity 0.4s;
 }
 
-.view--compare + .compare::before {
+.view--compare + .compare:before {
 	opacity: 1;
 }
 
@@ -578,11 +578,21 @@
 		display: block;
 	}
 
-	.compare__item .product__animal { border-bottom: 2px solid #2E294E; color: #F0F0F0; }
-	.compare__item .product__human { border-bottom: 2px solid #83EE7A; }
-	.compare__item .product__environ { border-bottom: 2px solid #4B5267; }
+    .compare__item .product__environ {
+/*        font-size: 1.85em;*/
+        border-bottom: 2px solid #2C2D34;
+    }
+    
+	.compare__item .product__animal {
+        border-bottom: 2px solid #2C2D34;
+        color: #2C2D34;
+    }
+    
+	.compare__item .product__human {
+        border-bottom: 2px solid #2C2D34;
+    }
 
-	.action--close {
+    .action--close {
 		padding: 0.5em 0.75em;
 	}
 

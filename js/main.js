@@ -11,7 +11,7 @@
 		bag;
 
 	// The Compare Bag
-	function CompareBag() {
+    function CompareBag() {
 		this.elm = document.querySelector( '.compare-bag' );
 		this.compareCtrl = this.elm.querySelector( '.action--compare' );
 		this.compareWrapper = document.querySelector( '.compare' ),
@@ -38,6 +38,7 @@
 		} );
 	}
 
+
 	CompareBag.prototype.add = function( item ) {
 		if ( this.isFull() ) {
 			return false;
@@ -63,6 +64,7 @@
 		classie.add( this.elm, 'compare-bag--active' );
 	};
 
+    
 	CompareBag.prototype._createItemPreview = function( item ) {
 		var self = this;
 
