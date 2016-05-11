@@ -46,14 +46,9 @@
 
 body,
 html {
-    background: url(../images/aisle.png) no-repeat center center fixed; 
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 /* ClearFix and Helper Classes */
@@ -76,10 +71,15 @@ html {
 /* Main Style */
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #24252A;
-	background: #CECECE;
+	color: #CECECE;
+	background-color: #24252A;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+    background: url(../images/aisle.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 a {
@@ -112,7 +112,7 @@ a:hover {
 .eth-header > span {
 	font-weight: 400;
 	font-size: 3.0em;
-	color: #E64A19;
+	color: #F0F0F0;
 	position: relative;
 	z-index: 100;
 	display: block;
@@ -144,8 +144,8 @@ a:hover {
 	text-indent: 0;
 	letter-spacing: 0;
 	text-transform: none;
-	color: #F0F0F0;
-	background: #E64A19;
+	color: #FF5722;
+	background: #24252A;
 }
 
 .eth-header nav {
@@ -169,7 +169,7 @@ a:hover {
 
 .eth-header nav a:hover:before {
 	content: attr( data-info );
-	color: #42444F;
+	color: #CECECE;
 	font-weight: bold;
 	font-size: 0.85em;
 	position: absolute;
@@ -215,45 +215,90 @@ a:hover {
 	content: '\e003';
 }
 
-/*
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
+
+.view {
+    background: #24252A;
+    display: inline;
+    width: 100%;
+    vertical-align: middle;
 }
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
+
+.view > section {
+	max-width: 290px;
+	width: 100%;
+	margin: 0 auto;
 }
-*/
+
+.view > section h2 {
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0 0 .6em 0;
+	color: #F0F0F0;
+    text-align: center;
+    width: 100%;
+}
 
 .button {
-    display: inline-block;
-    margin: 0;
-    padding: 3px 6px;
+    vertical-align: middle;
+    text-align: center;
     border: none;
-    background-color: #24252A;
-    color: #F0F0F0;
-    cursor: pointer;
-    text-align: left;    
-    text-decoration: none;
-    white-space: nowrap;
+	background: #E64A19;
+	color: #F0F0F0;
+	padding: 1.5em;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	margin: 30px 0;
+	font-size: 1em;
+    letter-spacing: 0.2em;
+    float: center;
 }
 
-.button:after {
-    content: attr( data-button-icon );
-    float: right;
-    padding-left: 1em;
-    background-color: #24252A;
+.button:hover {
+    color: #24252A;
+	background: #80CBC4;
+    box-shadow: 0 12px 16px 0 rgba(36,37,42,0.50),0 17px 50px 0 rgba(128,203,196,0.30);
 }
+
+.button.active {
+	background: #FF5722;
+}
+
+.button.disabled {
+	background: #CECECE;
+	pointer-events: none;
+}
+
+/*
+.view > section button {
+	border: none;
+	background: #E64A19;
+	color: #F0F0F0;
+	padding: 1.5em;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	margin: 30px 0;
+	font-size: 1em;
+    letter-spacing: 0.2em;
+    float: center;
+}
+
+.view > section button:hover {
+    color: #24252A;
+	background: #80CBC4;
+}
+
+.view > section button.active {
+	background: #FF5722;
+}
+
+.view > section button.disabled {
+	background: #CECECE;
+	pointer-events: none;
+}
+*/
 
 @media screen and ( max-width: 40em ) {
 	.eth-header h1 {

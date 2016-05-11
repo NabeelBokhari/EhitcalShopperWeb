@@ -59,7 +59,7 @@
 }
 
 .product--selected {
-	box-shadow: 0 0 0 3px #D60D20;
+	box-shadow: 0 0 0 3px #E64A19;
 }
 
 .flexbox .product {
@@ -148,7 +148,7 @@
 .product__final {
     font-size: 120%;
 	font-weight: bold;
-	color: #83EE7A;
+	color: #80CBC4;
 }
 
 .action {
@@ -168,14 +168,14 @@
 
 .action--button {
 	background: #2C2D34;
-	color: #FFFFFF;
+	color: #F0F0F0;
 	border-radius: 2px;
 	-webkit-transition: background 0.2s;
 	transition: background 0.2s;
 }
 
 .action--button:hover {
-	background: #53B63F;
+	background: #80CBC4;
 }
 
 .action__text {
@@ -204,7 +204,7 @@
 	top: 0;
 	right: 0;
 	font-size: 2em;
-	color: #DDDDDD;
+	color: #F0F0F0;
 	pointer-events: none;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, background 0.2s;
@@ -220,7 +220,7 @@
 
 .action--close:hover,
 .action--close:focus {
-	color: #D60D20;
+	color: #E64A19;
 }
 
 .action--compare {
@@ -228,8 +228,8 @@
 	opacity: 0;
 	pointer-events: none;
 	cursor: default;
-	background-color: #34363D;
-	color: #565B6C;
+	background-color: #24252A;
+	color: #42444F;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
@@ -242,8 +242,8 @@
 .compare-bag--active .action--compare:nth-child( 4 ),
 .compare-bag--active .action--compare:nth-child( 5 ),
 .compare-bag--active .action--compare:nth-child( 6 ) {
-	background-color: #4C6F40;
-	color: #FFFFFF;
+	background-color: #E64A19;
+	color: #F0F0F0;
 	pointer-events: auto;
 	cursor: pointer;
 }
@@ -251,7 +251,7 @@
 .action--remove {
 	position: absolute;
 	overflow: hidden;
-	color: #DDDDDD;
+	color: #F0F0F0;
 	top: 0px;
 	right: 2px;
 	padding: 0;
@@ -259,7 +259,7 @@
 }
 
 .action--compare-add {
-	color: #DDDDDD;
+	color: #F0F0F0;
 	position: absolute;
 	top: 10px;
 	right: 5px;
@@ -269,17 +269,17 @@
 	opacity: 1;
 	top: 35px;
 	right: 10px;
-	color: #DDDDDD;
+	color: #F0F0F0;
 	font-size: 75%;
 	letter-spacing: 0;
-	background: #2F3035;
+	background: #24252A;
 	border-radius: 2px;
 	padding: 3px 5px;
 }
 
 .action--remove:hover,
 .action--compare-add:hover {
-	color: #83EE7A;
+	color: #80CBC4;
 }
 
 .action--compare-add .fa-check,
@@ -289,7 +289,7 @@
 
 .action--compare-add input[ type=checkbox ]:checked ~ .fa-check {
 	display: block;
-	color: #83EE7A;
+	color: #80CBC4;
 }
 
 .check-hidden {
@@ -304,7 +304,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #212227;
+	background: #24252A;
 	z-index: 1000;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -353,7 +353,7 @@
 	left: 0;
 	border-radius: 4px;
 	z-index: -1;
-	box-shadow: -56px 0 #2C2D34;
+	box-shadow: -56px 0 #24252A;
 }
 
 .compare-bag--full .product-icon:after {
@@ -398,7 +398,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba( 0, 0, 0, 0.5 );
+	background: #E64A19;
 	opacity: 0;
 	-webkit-transition: opacity 0.4s;
 	transition: opacity 0.4s;
@@ -411,7 +411,7 @@
 .compare__item {
 	height: 100%;
 	width: 50%;
-	background: #2C2D34;
+	background: #24252A;
 	text-align: center;
 	cursor: default;
 	padding: 2em 0;
@@ -425,7 +425,7 @@
 }
 
 .compare__item:nth-of-type( 2 ) {
-	background: #2C2D34;
+	background: #24252A;
 }
 
 .compare__item .product__title {
@@ -445,7 +445,7 @@
 }
 
 .compare__item span[ class^="product__" ].hover {
-	background: #000;
+	background: #24252A;
 }
 
 /* Five Item Comparison Only */
@@ -580,16 +580,16 @@
 
     .compare__item .product__environ {
 /*        font-size: 1.85em;*/
-        border-bottom: 2px solid #2C2D34;
+        border-bottom: 2px solid #24252A;
     }
     
 	.compare__item .product__animal {
-        border-bottom: 2px solid #2C2D34;
-        color: #2C2D34;
+        border-bottom: 2px solid #24252A;
+        color: #24252A;
     }
     
 	.compare__item .product__human {
-        border-bottom: 2px solid #2C2D34;
+        border-bottom: 2px solid #24252A;
     }
 
     .action--close {

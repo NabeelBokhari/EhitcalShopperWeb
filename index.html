@@ -7,18 +7,17 @@
 		<title>Ethical Shopper: Home</title>
 		<meta name="description" content="An app that helps you shop ethically." />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/productcomp.css" />
+        <!-- Bootstrap and JQuery -->
+<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+-->
 		<!-- Modernizr is used in case of flexbox failure, for older browsers -->
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<!-- Compare Bag -->
-<!--
-		<div class="compare-bag">
-			<button class="action action--button action--compare"><i class="fa fa-check"></i><span class="action__text">Compare</span></button>
-		</div>
--->
 		<!-- Main view -->
 		<div class="view">
 			<!-- Header -->
@@ -26,20 +25,14 @@
 				<span>Ethical Shopper   <span class="eth-icon eth-icon-about" data-content="An app that provides an innovative approach to your decision making based on your ethical/political stances when buying a product."></span></span>
 				<h1>Home</h1>
 			</header>
-			<!-- Button grid -->
-			<section class="grid">
-				<!-- Buttons -->
-				<div class="product">
-                    <button data-button-icon="+" class="btn" href="#">Final Verdict:</button>
-				</div>
+            <!-- Button grid -->
+            <section>
+                <h2>What would you like to do?</h2>
+                <a href="pages/barcode.html" class="button">Barcode Search</a>
+                <a href="pages/prodover.html" class="button">Product Overview</a>
+                <a href="pages/prodcomp.html" class="button">Product Comparison</a>
 			</section>
 		</div><!-- /Main View -->
-		<!-- Product Compare Wrapper -->
-<!--
-		<section class="compare">
-			<button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close comparison overlay</span></button>
-		</section>
--->
 		<script src="js/classie.js"></script>
 		<script src="js/main.js"></script>
 	</body>
